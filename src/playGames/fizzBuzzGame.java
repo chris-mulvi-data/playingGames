@@ -3,14 +3,9 @@ package playGames;
 public class fizzBuzzGame {
 
 	public static void main(String[] args) {
-		int[] factors = new int[2];
-		factors[0] = 3;
-		factors[1] = 5;
-		String[] words = new String[2];
-		words[0] = "Fizz";
-		words[1] = "Buzz";
-		playFizzBuzz(100, factors, words);
-		
+		int[] factors = {3, 5};
+		String[] words = {"Fizz", "Buzz"};
+		playFizzBuzz(30, factors, words);
 	}
 	
 	/**
@@ -38,15 +33,13 @@ public class fizzBuzzGame {
 		}
 	}
 	
-	
-	
 	/**
 	 * Determines if there is a remainder when dividing a number by a factor
 	 * @param num
 	 * @param factor
 	 * @return hasRemainder
 	 */
-	public static boolean findRemainder(int num, int factor)
+	private static boolean findRemainder(int num, int factor)
 	{
 		boolean hasRemainder = true;
 		
