@@ -39,7 +39,7 @@ public class fizzBuzzGame {
 	 * @param factor
 	 * @return hasRemainder
 	 */
-	private static boolean findRemainder(int num, int factor)
+	public static boolean findRemainder(int num, int factor)
 	{
 		boolean hasRemainder = true;
 		
@@ -50,4 +50,30 @@ public class fizzBuzzGame {
 		
 		return hasRemainder;
 	}
+	
+	/**
+	 * Check for multiples of the supplied digits
+	 * @param num
+	 * @param factor
+	 * @return boolean
+	 */
+	public static boolean checkForMultiple(int num, int factor)
+	{
+		boolean isMultipleOf = false;
+		
+		if (num % factor == 0) {isMultipleOf = true;}
+		
+		return isMultipleOf;
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
